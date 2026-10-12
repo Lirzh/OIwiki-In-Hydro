@@ -1,0 +1,21 @@
+{% if handler.user.hasPriv(PRIV.PRIV_USER_PROFILE) %}
+{% set desc = payload if payload is string else none %}
+<div class="section side">
+  <div class="section__header">
+    <h1 class="section__title">{{ _('OI Wiki') }}</h1>
+  </div>
+  <div class="section__body typo">
+    <p>{% if desc %}{{ desc }}{% else %}{{ _('在线算法竞赛知识库，覆盖从入门到省选的完整教程。') }}{% endif %}</p>
+    <form method="get" action="/oiwiki/search">
+      <label>
+        <input name="q" type="text" class="textbox" value="" placeholder="{{ _('搜索 OI Wiki…') }}" autocomplete="off">
+      </label>
+      <button type="submit" class="primary rounded button">{{ _('Search') }}</button>
+      <a class="primary rounded button" href="/oiwiki">{{ _('进入 OI Wiki') }} ></a>
+    </form>
+    <p style="font-size: .8rem; color: #888; margin-top: .5rem;">
+      {{ _('内容来自 OI Wiki（CC BY-SA 4.0）。') }}
+    </p>
+  </div>
+</div>
+{% endif %}

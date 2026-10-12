@@ -1,0 +1,25 @@
+{
+    "name": "oiwiki-in-hydro",
+    "main": "index.ts",
+    "version": "2.0.0",
+    "description": "在 Hydro 中内嵌 OI Wiki",
+    "license": "MIT",
+    "dependencies": {
+        "highlight.js": "^11.9.0",
+        "js-yaml": "^4.1.0",
+        "katex": "^0.16.9",
+        "markdown-it": "^14.1.0",
+        "markdown-it-abbr": "^1.0.4",
+        "markdown-it-admonition": "^1.0.0",
+        "markdown-it-anchor": "^9.2.0",
+        "markdown-it-emoji": "^3.1.0",
+        "markdown-it-footnote": "^4.0.0",
+        "markdown-it-mark": "^3.0.1",
+        "markdown-it-sub": "^1.0.0",
+        "markdown-it-sup": "^1.0.0",
+        "markdown-it-task-lists": "^2.1.1"
+    },
+    "devDependencies": {
+        "@types/node": "^20.14.0"
+    }
+}
